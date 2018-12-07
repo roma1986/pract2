@@ -3,47 +3,47 @@
     x:Class="pract2.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="Bisque">
-
+    Style="{StaticResource Key=StyleContentPage}">
     <StackLayout
         Style="{StaticResource Key=StyleStackLayout}">
-        <StackLayout>
-            <Label
-                Style="{StaticResource Key=LabelStyle}"
-                Text="Flag of France (grid) " />
-            <Grid
-                Style="{StaticResource Key=GridStyle}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition
-                        Width="{StaticResource Key=ColumnDefinitionWidth}" />
-                    <ColumnDefinition
-                        Width="{StaticResource Key=ColumnDefinitionWidth}" />
-                    <ColumnDefinition
-                        Width="{StaticResource Key=ColumnDefinitionWidth}" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                        Height="{StaticResource Key=RowDefinitionHeight}" />
-                    <RowDefinition
-                        Height="{StaticResource Key=RowDefinitionHeight}" />
-                    <RowDefinition
-                        Height="{StaticResource Key=RowDefinitionHeight}" />
-                </Grid.RowDefinitions>
-
-                <BoxView
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Style="{StaticResource Key=BoxViewLeft}" />
-                <BoxView
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Style="{StaticResource Key=BoxViewСenter}" />
-                <BoxView
-                    Grid.Row="0"
-                    Grid.Column="2"
-                    Style="{StaticResource Key=BoxViewReight}" />
-            </Grid>
-        </StackLayout>
+        <Label
+            Style="{StaticResource Key=LabelStyle}"
+            Text="Flag of France (grid)" />
+        <Label
+            x:Name="VersionAndroid"
+            Style="{StaticResource Key=LabelStyle}"
+            Text="" />
+        <Grid
+            Style="{StaticResource Key=GridStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="{StaticResource Key=ColumnDefinitionWidth}" />
+                <ColumnDefinition
+                    Width="{StaticResource Key=ColumnDefinitionWidth}" />
+                <ColumnDefinition
+                    Width="{StaticResource Key=ColumnDefinitionWidth}" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="{StaticResource Key=RowDefinitionHeight}" />
+                <RowDefinition
+                    Height="{StaticResource Key=RowDefinitionHeight}" />
+                <RowDefinition
+                    Height="{StaticResource Key=RowDefinitionHeight}" />
+            </Grid.RowDefinitions>
+            <BoxView
+                Grid.Row="0"
+                Grid.Column="0"
+                Style="{StaticResource Key=BoxViewLeft}" />
+            <BoxView
+                Grid.Row="0"
+                Grid.Column="1"
+                Style="{StaticResource Key=BoxViewСenter}" />
+            <BoxView
+                Grid.Row="0"
+                Grid.Column="2"
+                Style="{StaticResource Key=BoxViewReight}" />
+        </Grid>
 
     </StackLayout>
 </ContentPage>

@@ -13,6 +13,9 @@ namespace pract2
         public MainPage()
         {
             InitializeComponent();
+            IdDeviceinfo deviceinfo = DependencyService.Get<IdDeviceinfo>();
+            VersionAndroid.Text = deviceinfo.GetInfo();
+
         }
     }
 }

@@ -6,15 +6,21 @@
     <Application.Resources>
         <ResourceDictionary>
 
-            <!--Стиль StackLayout-->
+            <!--  Стиль ContentPage  -->
+            <Style
+                x:Key="StyleContentPage"
+                TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="Bisque" />
+            </Style>
+
+            <!--  Стиль StackLayout  -->
             <Style
                 x:Key="StyleStackLayout"
                 TargetType="StackLayout">
                 <Setter Property="Margin" Value="10,10,10,10" />
                 <Setter Property="Spacing" Value="10" />
-                
             </Style>
-            
+
             <!--  Ширина стовбця таблиці  -->
             <x:Double
                 x:Key="ColumnDefinitionWidth">
@@ -52,21 +58,20 @@
                 TargetType="BoxView">
                 <Setter Property="Color" Value="Blue" />
             </Style>
-            
+
             <!--  Стиля для прапора BoxViewСenter  -->
             <Style
                 x:Key="BoxViewСenter"
                 TargetType="BoxView">
                 <Setter Property="Color" Value="White" />
             </Style>
-            
+
             <!--  Стиля для прапора BoxViewReight  -->
             <Style
                 x:Key="BoxViewReight"
                 TargetType="BoxView">
                 <Setter Property="Color" Value="Red" />
             </Style>
-            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
