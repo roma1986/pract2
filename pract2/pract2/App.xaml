@@ -5,6 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Application.Resources>
         <ResourceDictionary>
+
+            <!--Стиль StackLayout-->
+            <Style
+                x:Key="StyleStackLayout"
+                TargetType="StackLayout">
+                <Setter Property="Margin" Value="10,10,10,10" />
+                <Setter Property="Spacing" Value="10" />
+                
+            </Style>
+            
             <!--  Ширина стовбця таблиці  -->
             <x:Double
                 x:Key="ColumnDefinitionWidth">
@@ -31,28 +41,32 @@
             <Style
                 x:Key="GridStyle"
                 TargetType="Grid">
-                <Setter Property="ColumnSpacing" Value="2" />
+                <Setter Property="ColumnSpacing" Value="0" />
                 <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="RowSpacing" Value="2" />
+                <Setter Property="RowSpacing" Value="0" />
             </Style>
 
+            <!--  Стиля для прапора BoxViewLeft  -->
             <Style
                 x:Key="BoxViewLeft"
                 TargetType="BoxView">
                 <Setter Property="Color" Value="Blue" />
             </Style>
-
+            
+            <!--  Стиля для прапора BoxViewСenter  -->
             <Style
-                x:Key="BoxViewSenter"
+                x:Key="BoxViewСenter"
                 TargetType="BoxView">
                 <Setter Property="Color" Value="White" />
             </Style>
-
+            
+            <!--  Стиля для прапора BoxViewReight  -->
             <Style
-                x:Key="BoxViewRight"
+                x:Key="BoxViewReight"
                 TargetType="BoxView">
                 <Setter Property="Color" Value="Red" />
             </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
