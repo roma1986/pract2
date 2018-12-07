@@ -3,22 +3,40 @@
     x:Class="pract2.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:pract2">
+    BackgroundColor="Bisque">
 
-    <StackLayout>
-        <StackLayout.Resources>
-            <ResourceDictionary />
-        </StackLayout.Resources>
-        <!--  Place new controls here  -->
-        <Button
-            BackgroundColor="Green"
-            Text="But1" />
-        <Button
-            BackgroundColor="Green"
-            Text="But2" />
-        <Button
-            BackgroundColor="Green"
-            Text="But3" />
+    <StackLayout 
+        Margin="10,10,10,10"
+        Spacing="10">
+        <Label Text="Flag of France (grid)" Style="{StaticResource  Key=LabelStyle}"/>
+        <Grid
+            Style="{StaticResource Key=GridStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="{StaticResource Key=ColumnDefinitionWidth}" />
+                <ColumnDefinition
+                    Width="{StaticResource Key=ColumnDefinitionWidth}" />
+                <ColumnDefinition
+                    Width="{StaticResource Key=ColumnDefinitionWidth}" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="{StaticResource Key=RowDefinitionHeight}" />
+                <RowDefinition
+                    Height="{StaticResource Key=RowDefinitionHeight}" />
+                <RowDefinition
+                   Height="{StaticResource Key=RowDefinitionHeight}" />
+            </Grid.RowDefinitions>
+            <BoxView Style="{StaticResource  Key=BoxViewLeft}"
+                Grid.Row="0"
+                Grid.Column="0"/>
+            <BoxView Style="{StaticResource  Key=BoxViewSenter}"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
+            <BoxView Style="{StaticResource  Key=BoxViewRight}"
+                Grid.Row="0"
+                Grid.Column="2"/>
+        </Grid>
     </StackLayout>
-
 </ContentPage>
